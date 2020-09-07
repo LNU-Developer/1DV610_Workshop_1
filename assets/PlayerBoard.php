@@ -12,16 +12,22 @@ class PlayerBoard {
 
     public function createBoard() {
         for ($i = 0; $i < $this->tileQuantity; $i++) {
-            if($this->boxNotTaken()) {
+            //if($this->boxNotTaken($i)) {
                 $this->tilesHTML .= "<a id='$i' class ='box' href ='index.php?tile=$i'></a>";
-            } else {
-                $this->tilesHTML .= "<a id='$i' class ='box'>O</a>";
-            }
+            //} else {
+             //   $this->tilesHTML .= "<a id='$i' class ='box'>O</a>";
+           // }
         }
     }
-    private function boxNotTaken() {
-        return false;
-    }
+    //private function boxNotTaken($index) {
+      //  for($i = 0; $i < count($_SESSION['gameBoard']); $i++ ) {
+        //    if($i === $index) {
+          //      return true;
+           // } else {
+             //   return false;
+           // }
+       // }
+   // }
 
     public function echoHTML() {
         echo "

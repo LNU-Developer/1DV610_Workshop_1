@@ -1,9 +1,8 @@
 <?php
-session_start();
-if(isset($_SESSION['gameBoard'])) {
-    $_SESSION['gameBoard'] = array();
-}
-
+//session_start();
+//if(isset($_SESSION['gameBoard'])) {
+//    $_SESSION['gameBoard'] = array();
+//}
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +24,7 @@ if(isset($_SESSION['gameBoard'])) {
             if(isset($_GET["tile"]))
             {
                 echo "The id is ".$_GET["tile"];
-
+                //array_push($_SESSION['gameBoard'], $_GET['tile']);
             }
         ?>
     </body>
